@@ -38,7 +38,7 @@ end)
 Citizen.CreateThread(function()
 	while true do
 		Citizen.Wait(1)
-
+--
 		if IsControlJustPressed(1, Keys['H']) and IsControlPressed(1, Keys['LEFTSHIFT']) then
 			voice.current = (voice.current + 1) % 3
 			if voice.current == 0 then
@@ -52,7 +52,7 @@ Citizen.CreateThread(function()
 				voice.level = _U('whisper')
 			end
 		end
-
+--
 		if voice.current == 0 then
 			voice.level = _U('normal')
 		elseif voice.current == 1 then
